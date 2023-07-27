@@ -36,3 +36,275 @@
     transform: rotate(360deg);
   }
 }
+
+ul{
+  padding: 0;
+}
+
+li{
+  margin: 10px 0;
+}
+
+.done .text{
+  text-decoration: line-through;
+  margin: 0 2vw;
+  color: #808080;
+  word-break: break-all;
+  flex: 1 1 auto;
+}
+
+.done .btn_check{
+  height: 3vh;
+  width: 1.5vw;
+  background-color: #333333;
+  background-image: url(/src/images/check-done.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+}
+
+.main-w{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #262626;
+  min-height: 100vh;
+}
+
+.header{
+  width: 100%;
+  height: 20vh;
+  background: #0D0D0D;
+  position: relative;
+  margin: 0 0 50px 0;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-img{
+  width: 50px;
+  height: 50px;
+  background-image: url(/src/images/logo1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo{
+  margin: 6vh 0;
+  font-size: 200%;
+  font-weight: 600;
+  color: #5E60CE;
+  display: flex;
+  align-items: center;
+}
+
+.for-new-task{
+  position: absolute;
+  top: 9.5vh;
+  height: 7vh;
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+input{
+  background-color: #262626;
+  border: solid 1px #0D0D0D;
+  height: 100%;
+  width: 90%;
+  border-radius: 5px;
+  color: #F2F2F2;
+  margin: 0 20px 0 0;
+  color: #808080;
+  font-size: 100%;
+}
+
+input::placeholder{
+  padding: 0 1vw;
+}
+
+input:hover{
+  border: 1px solid #F2F2F2;
+}
+
+.btn_add{
+  background: #1E6F9F;
+  color: #F2F2F2;
+  border: 1px solid rgba(242, 242, 242, 0);
+  border-radius: 5px;
+  height: 100%;
+  font-size: 100%;
+}
+
+.btn_add:hover{
+  cursor: pointer;
+  background: none;
+  border: 1px solid #1E6F9F;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.title span{
+  color: #D9D9D9;
+  background: #333333;
+  padding: 1px 5px;
+  border-radius: 8px;
+}
+
+.title-1{
+  color: #4EA8DE;
+
+}
+
+.title-2 {
+  color: #8284FA;
+}
+
+.body {
+  margin: 10px;
+  width: 63vw;
+  border-top: 1px solid #808080;
+  border-radius: 8px 8px 0 0;
+  min-height: 100px;
+  font-size: 16px;
+}
+
+.default-body {
+  padding: 50px 0;
+  width: 37%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.default-img{
+  width: 70px;
+  height: 70px;
+  background-image: url(/src/images/none-notes.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+p{
+  color: #808080;
+  font-weight: 500;
+}
+
+span{
+  font-weight: 400;
+}
+
+
+.task-item{
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  border-radius: 5px;
+  border: solid 1px #808080;
+  padding: 1.4vh 0.9vw;
+  margin: 0 auto;
+}
+
+.btn_check{
+  height: 3vh;
+  width: 1.5vw;
+  background-color: #333333;
+  background-image: url(/src/images/check.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+}
+
+.btn_check:hover,
+.btn_checked:hover{
+  cursor: pointer;
+}
+
+.text{
+  margin: 0 2vw;
+  color: #F2F2F2;
+  word-break: break-all;
+  flex: 1 1 auto;
+  font-size: 100%;
+  max-width: 88%;
+}
+
+.btn_delete{
+  height: 3vh;
+  width: 1.5vw;
+  background-color: #333333;
+  background-image: url(/src/images/trash.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  border: none;
+}
+
+.btn_delete:hover{
+  background-color: #262626;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+li{
+  list-style-type: none;
+}
+
+@media screen and (max-width: 1200px){
+
+}
+
+@media screen and (max-width: 1000px) {}
+
+@media screen and (max-width: 768px) {
+  .header{
+    font-size: 12px;
+  }
+
+  .title{
+    font-size: 12px;
+  }
+
+  .body{
+    font-size: 12px;
+  }
+
+  .logo-img{
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+      font-size: 10px;
+      height: 18vh;
+    }
+
+  .for-new-task{
+    height: 5vh;
+    width: 51vw;
+    top: 8.5vh;
+  }
+
+  .title {
+    font-size: 10px;
+  }
+
+  .body {
+    font-size: 10px;
+  }
+
+}
